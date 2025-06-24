@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #d32f2f, #ff7043);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Image */
+figure {
+    text-align: center;
+    margin: 20px 0;
+    animation: zoomIn 1s ease-in-out;
+}
+
+figcaption {
+    font-style: italic;
+    color: #666;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    animation: slideUp 1s ease-in-out;
+}
+
+main:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #d32f2f;
+    border-bottom: 3px solid #d32f2f;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+th {
+    background-color: #d32f2f;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #ffccbc;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+}
+
+tfoot td {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+/* Interactive Buttons */
+a {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #d32f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+a:hover {
+    background: #b71c1c;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
